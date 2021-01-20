@@ -1,0 +1,50 @@
+import telebot
+
+bot = telebot.TeleBot('1074788921:AAF9nXjS5Fei9SslPUjp6eTvUxihHy-2C_Q')
+
+@bot.message_handler(commands=['start'])
+def start_message(message):
+    bot.send_message(message.chat.id, 'Здарова, ебать')
+
+@bot.message_handler(commands=['apex'])
+def start_message(message):
+    bot.send_message(message.chat.id, '@kaminora, @Mortimer_Craft, @Fir3proof')
+
+@bot.message_handler(commands=['@all'])
+def start_message(message):
+    bot.send_message(message.chat.id, '@neonclouds, @sir_pine4pples, @serbiuss, @Electrolysis, @Mortimer_Craft, @KatharinaMur, @Ladislavische, @middrin, @Pavluntig, @Dracolinga, @kaminora, @tigorubica, @ii159, @Fir3proof, @iris_sushechka')
+
+@bot.message_handler(content_types=['text'])
+def send_text(message):
+    if message.text.lower() == 'да':
+        bot.send_message(message.chat.id, 'Пизда')
+    elif message.text.lower() == 'lf':
+        bot.send_message(message.chat.id, 'Пизда')
+    elif message.text.lower() == 'da':
+        bot.send_message(message.chat.id, 'pizda')
+    elif message.text.lower() == 'yes':
+        bot.send_message(message.chat.id, 'Dick in your ass')
+    elif message.text.lower() == 'нет':
+        bot.send_message(message.chat.id, 'Пидора ответ')
+    elif message.text.lower() == 'ytn':
+        bot.send_message(message.chat.id, 'Пидора ответ')
+    elif message.text.lower() == 'net':
+        bot.send_message(message.chat.id, 'Pidora otvet')
+    elif message.text.lower() == '.net':
+        bot.send_message(message.chat.id, 'Rocketbanka.net')
+    elif message.text.lower() == 'no':
+        bot.send_message(message.chat.id, 'Нахуй пошёл, англиский пидор!')
+    elif message.text.lower() == 'здрастье':
+        bot.send_message(message.chat.id, 'Забор покрасьте')
+    elif message.text.lower() == '300':
+        bot.send_message(message.chat.id, 'Отсоси у тракториста')
+    elif message.text.lower() == 'триста':
+        bot.send_message(message.chat.id, 'Отсоси у тракториста')
+    elif message.text.lower() == '@all':
+        bot.send_message(message.chat.id, '@neonclouds, @sir_pine4pples, @serbiuss, @Electrolysis, @Mortimer_Craft, @KatharinaMur, @Ladislavische, @middrin, @Pavluntig, @Dracolinga, @kaminora, @tigorubica, @ii159, @Fir3proof, @iris_sushechka')
+    elif message.text.lower() == '112':
+        bot.send_message(message.chat.id, '*кашляет*')
+
+
+
+bot.polling()
